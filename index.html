@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width: device-width, initial-scale: 1.0">
+    <title>Coffee Lovers Form</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <h1 id="title">Coffee Form</h1>
+    <p id="description">This Form is for Coffee Lovers Thank You</p>
+
+    <form id="survey-form">
+      <fieldset>
+        <label for="name" id="name-label"> Name <input type="text" id="name" name="name" required placeholder="Enter Name"></label>
+
+        <label for="email" id="email-label">Email <input type="email" name="email" id="email"  placeholder="Enter Email" required> </label>
+
+        <label for="number" id="number-label"> Age<input type="number" name="age" id="number" placeholder="Age" min="18" max="69"</label>
+      </fieldset>
+      <fieldset>
+          <label>What type of coffee you like</label>
+          <select id="dropdown">
+            <option disabled selected value>(Select What type of Coffee you like)</option>
+            <option name="coffee-type" value="hazelnut">HazelNut</option>
+            <option name="coffee-type" value="cappuccino">Cappuccino</option>
+            <option name="coffee-type" value="espresso">Espresso</option>
+            <option name="coffee-type" value="machiato">Macchiato</option>
+            <option name="coffee-type" value="mocha">Mocha</option>
+          </select>
+        </fieldset>
+
+        <fieldset >
+          <label>What Kind of Coffee You like?</label>
+          <label for="hot"> <input type="radio" name="coffee-type" id="hot" class="inline" value="Hot"> Hot</label>
+          <label for="cold"> <input type="radio" name="coffee-type" id="cold" class="inline" value="Cold"> Cold</label>
+        </fieldset>
+
+        </fieldset>
+            <label>What Kind Of Desserts You Like? (Check All That Apply)</label>
+            <label> <input type="checkbox" class="inline" value="Chocolate">Chocolate</input></label>
+            <label> <input type="checkbox" class="inline" value="Donut">Donut</input></label>
+            <label> <input type="checkbox" class="inline" value="HashBrown">HashBrown</input></label>
+            <label> <input type="checkbox" class="inline" value="Ice Cream">Ice Cream</input></label>
+            <label> <input type="checkbox" class="inline" value="Pie">Pie</input></label>
+
+        </fieldset>
+
+        <fieldset>
+          <label>Add A Comment</label>
+          <label for="comment"><textarea name="comment" id="comment" rows="5" cols="20"></textarea></label>
+        </fieldset>
+        <input type="submit" id="submit" value="Submit"></input>
+    </form>
+  </body>
+</html>
